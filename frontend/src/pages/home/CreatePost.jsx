@@ -63,7 +63,7 @@ const CreatePost = () => {
 	};
 
 	return (
-		<div className='flex p-4 items-start gap-4 border-b border-gray-700'>
+		<div className='flex p-4 items-start gap-4 border-b border-blue-700'>
 			<div className='avatar'>
 				<div className='w-8 rounded-full'>
 					<img src={authUser.profileImg || "/avatar-placeholder.png"} />
@@ -71,15 +71,15 @@ const CreatePost = () => {
 			</div>
 			<form className='flex flex-col gap-2 w-full' onSubmit={handleSubmit}>
 				<textarea
-					className='textarea w-full p-0 text-lg resize-none border-none focus:outline-none  border-gray-800'
-					placeholder='What is happening?!'
+					className='textarea w-full p-0 text-lg resize-none border-none focus:outline-none  border-blue-800'
+					placeholder='See What"s Up?!'
 					value={text}
 					onChange={(e) => setText(e.target.value)}
 				/>
 				{img && (
 					<div className='relative w-72 mx-auto'>
 						<IoCloseSharp
-							className='absolute top-0 right-0 text-white bg-gray-800 rounded-full w-5 h-5 cursor-pointer'
+							className='absolute top-0 right-0 text-blue-900 bg-blue-300 rounded-full w-5 h-5 cursor-pointer'
 							onClick={() => {
 								setImg(null);
 								imgRef.current.value = null;
@@ -89,7 +89,7 @@ const CreatePost = () => {
 					</div>
 				)}
 
-				<div className='flex justify-between border-t py-2 border-t-gray-700'>
+				<div className='flex justify-between border-t py-2 border-t-yellow-800'>
 					<div className='flex gap-1 items-center'>
 						<CiImageOn
 							className='fill-primary w-6 h-6 cursor-pointer'

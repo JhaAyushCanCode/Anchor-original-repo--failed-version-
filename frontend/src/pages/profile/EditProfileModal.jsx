@@ -41,7 +41,7 @@ const EditProfileModal = ({ authUser }) => {
 				Edit profile
 			</button>
 			<dialog id='edit_profile_modal' className='modal'>
-				<div className='modal-box border rounded-md border-gray-700 shadow-md'>
+				<div className='modal-box border rounded-md border-blue-700 shadow-md'>
 					<h3 className='font-bold text-lg my-3'>Update Profile</h3>
 					<form
 						className='flex flex-col gap-4'
