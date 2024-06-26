@@ -26,6 +26,6 @@
 	"devDependencies": {
 		"nodemon": "^3.1.0",
 		"concurrently": "^8.2.0",
-		"@vitejs/plugin-react": "^4.0.0" // Add this line
+		"@vitejs/plugin-react": "^4.0.0" 
 	}
 }
