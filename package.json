@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "backend/server.js",
 	"scripts": {
-		"dev": "NODE_ENV=development nodemon backend/server.js",
+		"dev": "NODE_ENV=development nodemon backend/server.js & vite",
 		"start": "NODE_ENV=production node backend/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
 	},
@@ -13,6 +13,7 @@
 	"type": "module",
 	"license": "ISC",
 	"dependencies": {
+		"vite":"^5.3.1",
 		"bcryptjs": "^2.4.3",
 		"cloudinary": "^2.1.0",
 		"cookie-parser": "^1.4.6",
@@ -23,6 +24,7 @@
 		"mongoose": "^8.3.1"
 	},
 	"devDependencies": {
+		"vite":"^5.3.1",
 		"nodemon": "^3.1.0"
 	}
 }
